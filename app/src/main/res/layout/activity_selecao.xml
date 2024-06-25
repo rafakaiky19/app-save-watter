@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue200"
+    tools:context=".selecao">
+
+
+    <ImageView
+        android:id="@+id/Iconiregistradas"
+        android:layout_width="170dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="28dp"
+        android:elevation="100dp"
+        android:src="@drawable/iconi_registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Nascentes_registradas"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Nascentes_registradas"
+        android:layout_width="145dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="44dp"
+        android:text=" Nascentes registradas"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toEndOf="@+id/Button_perfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/registar"
+        android:layout_width="170dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="4dp"
+        android:elevation="100dp"
+        android:src="@drawable/registar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Nascentes_registrar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Nascentes_registrar"
+        android:layout_width="131dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="arial"
+        android:text=" Registrar nascentes"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Iconiregistradas"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/ondas"
+        android:layout_width="1172dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+
+        android:src="@drawable/ondaspng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registar"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/Button_perfil"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="488dp"
+        android:background="@drawable/selection_ic"
+        android:contentDescription="button"
+        app:layout_constraintBottom_toTopOf="@+id/ondas"
+        app:layout_constraintEnd_toStartOf="@+id/Nascentes_registradas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

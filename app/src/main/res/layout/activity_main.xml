@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue200"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text_SaveWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/activity_vertical_margin"
+        android:fontFamily="arial"
+        android:text="Save Watter"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conteiner"
+        app:layout_constraintVertical_bias="0.813"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/ondas"
+        android:layout_width="1172dp"
+        android:layout_height="0dp"
+
+        android:src="@drawable/ondaspng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camera_button"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/conteiner"
+        android:layout_width="315dp"
+        android:layout_height="563dp"
+        android:src="@drawable/conteiner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+
+        android:id="@+id/vegetacao"
+        style="@style/Edit_text"
+        android:layout_width="246dp"
+        android:layout_height="58dp"
+        android:hint="Vegetação:"
+        app:layout_constraintBottom_toBottomOf="@+id/conteiner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/locationButton"
+        android:layout_width="264dp"
+        android:layout_height="67dp"
+        android:backgroundTint="@color/blue600"
+        android:fontFamily="arial"
+        android:text="Sua Localização"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/conteiner"
+        app:layout_constraintEnd_toEndOf="@+id/conteiner"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/conteiner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="298dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="32dp"
+        android:text="  Vegetação em torno"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/vegetacao"
+        app:layout_constraintEnd_toEndOf="@+id/conteiner"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/addressText"
+
+        android:layout_width="212dp"
+        android:layout_height="56dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/conteiner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+
+        android:id="@+id/aspecto"
+        style="@style/Edit_text"
+        android:layout_width="246dp"
+        android:layout_height="58dp"
+        android:hint="Aspecto:"
+
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.25"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="4dp"
+        android:text="Aspecto da água"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/conteiner"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/conteiner"
+        app:layout_constraintTop_toBottomOf="@+id/locationButton"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/camera_button"
+        android:layout_width="79dp"
+        android:layout_height="78dp"
+        android:background="@drawable/camera_ic"
+        android:contentDescription="button"
+        app:layout_constraintBottom_toBottomOf="@+id/conteiner"
+        app:layout_constraintEnd_toEndOf="@+id/vegetacao"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vegetacao"
+        app:layout_constraintTop_toBottomOf="@+id/vegetacao"
+        app:layout_constraintVertical_bias="0.534" />
+
+    <ImageButton
+        android:id="@+id/save"
+        android:layout_width="79dp"
+        android:layout_height="78dp"
+        android:background="@drawable/ic_save"
+        android:contentDescription="button"
+        android:onClick="save"
+        app:layout_constraintBottom_toBottomOf="@+id/conteiner"
+        app:layout_constraintEnd_toEndOf="@+id/vegetacao"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/vegetacao"
+        app:layout_constraintTop_toBottomOf="@+id/vegetacao" />
+
+
+    <ImageView
+        android:id="@+id/ImageFoto"
+        android:layout_width="79dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
